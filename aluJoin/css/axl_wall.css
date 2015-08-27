@@ -1,0 +1,381 @@
+ 
+/* 
+@Content: Archivo css que contiene el diseño de la barra superior
+@Authors: Xavi, Lluis & Alberto;
+@Date: 11-02-2015
+
+Nota: todo selector de mybutton es de un template externo;
+*/
+
+/*****************************/
+/*  Definicion de selectores */
+/*****************************/
+
+/* Define la pared o bloque en eel que postearemos nuestros datos*/
+.wall{
+
+  display: block;
+  margin-left: 14%;
+  margin-right: 14%;
+  margin-top: 6%;
+  margin-bottom: 20px;
+  width: 69%;
+  height: 100%;
+  padding: 10px;
+}
+
+.wall#back{
+  background-color:rgba(255,255,255,0.3);
+  border-radius: 5px;  
+  box-shadow: 2px 2px 5px #888888;
+}
+
+/* Parte utilizada para definir los bloques superiores del muro, es decir el avatar y la descripcion*/
+.boxing_top{
+  display: inline-block;
+  background-color:rgba(255,255,255,1);
+  border: 1px solid #C2C2C2;
+  border-radius: 5px;
+  vertical-align:top;
+}
+
+.boxing_bot{
+  display: inline-block;
+  background-color:rgba(255,255,255,1);
+  border: 1px solid #C2C2C2;
+  border-radius: 5px;
+  vertical-align:top;
+}
+
+/* Definimos mas diseño para cada una de las partes, es decir para el avatar*/
+.boxing_top#lateral{
+  width: 25%;
+  height: 245px;
+}
+
+/* Diseño para la descripcion, le hemos dado un cierto tamaño en funcion de la letra, asi como 1 gradiente para el username*/
+.boxing_top#main{
+  margin-left: 5px;
+  width: 73%;
+  height: 245px;
+  min-height: 100%;
+
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%,#F00), color-stop(40%,#00F));
+  background: -moz-linear-gradient(top bottom, #F00 40%, #00F 40%);
+  background: -o-linear-gradient(left, #F00 40%, white 40%);
+  background: linear-gradient(to bottom, #E8E8E8 16%, white 16%);
+}
+
+.boxing_top#prof{
+  margin-left: 5px;
+  width: 73%;
+  height: 605px;
+  min-height: 100%;
+
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%,#F00), color-stop(40%,#00F));
+  background: -moz-linear-gradient(top bottom, #F00 40%, #00F 40%);
+  background: -o-linear-gradient(left, #F00 40%, white 40%);
+  background: linear-gradient(to bottom, #E8E8E8 7%, white 7%);
+}
+
+.title td{
+	
+	padding-left: 40px;
+}
+
+.boxing_top#actions{
+  margin-top: 10px;
+  width: 25%;
+}
+
+/* Diseño que contendra los mensajes, le hemos dado unos margenes*/
+.boxing_top#messages{
+  margin-left: 5px;
+  margin-top: 10px;
+  width: 71%;
+  min-height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.boxing_top#newTweet{
+  margin-left: 5px;
+  margin-top: 10px;
+  width: 71%;
+  height: 218px;
+  min-height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.mesag{
+
+  display: inline-block;
+  background-color:rgba(248,248,248,1);
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 100px;
+  width:83%;
+  vertical-align:top;
+
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%,#F00), color-stop(40%,#00F));
+  background: -moz-linear-gradient(top bottom, #F00 40%, #00F 40%);
+  background: -o-linear-gradient(left, #F00 40%, white 40%);
+  background: linear-gradient(to bottom, #F2F2F2 30px, white 20px);
+
+}
+
+.msgpost{
+  margin-top: 10px;
+}
+
+.mesag_av{
+  display: inline-block;
+  background-color:rgba(255,255,255,1);
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 15%;
+  height: 100px;
+  vertical-align:top;
+}
+
+.mesag p{
+
+  display: inline;
+  font-family: Arial,sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-bottom: 0px;
+}
+.mesag hr{
+  border-color: solid #FFFFFF;
+}
+
+nav.avatar{
+  text-align:center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+
+}
+
+/* Hr, es decir la linea utiliada para separar contenedores, definimos diferentes estilos segun las necesidades*/
+hr#name{
+  color: #979797;
+  margin-left: 5px;
+  box-shadow: 0px 0px 2px #2E2E2E;
+}
+hr#status{
+  color: #979797;
+  margin-left: 5px;
+  box-shadow: 0px 0px 2px #2E2E2E;
+}
+
+hr#follow{
+  color: #FFFFFF;
+  margin-left: 25px;
+  margin-right: 25px;
+  box-shadow: 0px -2px 5px #2E2E2E;
+}
+
+hr#alma{
+  color: #FFFFFF;
+  margin-left: 0px;
+  margin-right: 0px;
+  box-shadow: 0px 2px 5px #2E2E2E;
+}
+
+hr#mesage{
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ccc;
+   padding: 0;
+}
+
+
+/* Definimos links de navegacion, le damos diferentes etilos para situarlos, este es para el titulo*/
+nav.title{
+  display: inline-block;
+  vertical-align:top;
+  width: 75%;
+  margin-top: 10px;
+}
+
+/* Estilo para el nav de los datos de los followers*/
+nav.follow{
+  display: inline-block;
+  text-align: center;
+  vertical-align:top;
+  width: 24%;
+  margin-top: 9px;
+}
+
+/* Estilo dado paraa cada una de las letras, en funcion de como queramos le damos una fuente, tamaño etc..*/
+
+p#name{
+  display: inline;
+  font-family: Arial,sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-bottom: 0px;
+  padding: 5px;
+}
+
+p#username{
+
+  display: inline;
+  color: #8899A6;
+}
+
+p#alma{
+  display: inline-block;
+  vertical-align:top;
+  font-weight: 600;
+  color: #8899A6;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+p#topic{
+
+  display: inline-block;
+  vertical-align:top;
+  font-family: Arial,sans-serif;
+  font-size: 13px;
+  margin-left: 15px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+p#topuser{
+
+  display: inline-block;
+  vertical-align:top;
+  font-family: Arial,sans-serif;
+  font-size: 10px;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #8899A6;
+}
+
+p#topdate{
+
+  float: right;
+  display: inline-block;
+  vertical-align:top;
+  font-family: Arial,sans-serif;
+  font-size: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+span#alinfo p{
+  font-family: Arial,sans-serif;
+  font-size: 13px;
+  margin-left: 25px;
+  margin-right: 15px;
+  margin-bottom: 0px;
+}
+
+#actions h2{
+  font-family: Tahoma;
+  font-size: 14px;
+  text-align: center;
+}
+
+#actions ul{
+  font-family: Tahoma;
+  font-size: 12px;
+  font-weight:bold;
+  padding-left: 40px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.sesiondate{
+  clear: both;
+  font-family: Tahoma;
+  font-size: 12px;
+  font-weight:bold;
+  height: 40px;
+  width: 100%;
+  text-align:center;
+}
+
+.icon_msg{
+	width: 10px;
+	height: 10px;
+}
+
+#actions li:before{ content:"-"; position:relative; left:-5px;}
+#actions li{ text-indent:-5px; }
+
+#actions a{
+  color: #2E2E2E;
+  text-decoration: none;
+}
+
+#actions a:hover{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.mesag p:hover{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Css que pertenece al template externo para el boton de following*/
+.myButton {
+  -moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+  -webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+  box-shadow:inset 0px 1px 3px 0px #91b8b3;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+  background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+  background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+  background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+  background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+  background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+  background-color:#768d87;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  border:1px solid #566963;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:1px 15px;
+  text-decoration:none;
+  text-shadow:0px -1px 0px #2b665e;
+}
+.myButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+  background:-moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+  background:-webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+  background:-o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+  background:-ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+  background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
+  background-color:#6c7c7c;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}

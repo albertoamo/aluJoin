@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Practica3</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Content</display-name>
+    <servlet-name>Content</servlet-name>
+    <servlet-class>controllers.Content</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Content</servlet-name>
+    <url-pattern>/Content</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>formcontroller</display-name>
+    <servlet-name>formcontroller</servlet-name>
+    <servlet-class>controllers.formcontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>formcontroller</servlet-name>
+    <url-pattern>/formcontroller</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>editcontroller</display-name>
+    <servlet-name>editcontroller</servlet-name>
+    <servlet-class>controllers.editcontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editcontroller</servlet-name>
+    <url-pattern>/editcontroller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>logincontroller</display-name>
+    <servlet-name>logincontroller</servlet-name>
+    <servlet-class>controllers.logincontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logincontroller</servlet-name>
+    <url-pattern>/logincontroller</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>tweetscontroller</display-name>
+    <servlet-name>tweetscontroller</servlet-name>
+    <servlet-class>controllers.tweetscontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>tweetscontroller</servlet-name>
+    <url-pattern>/tweetscontroller</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>sharetweetcontroller</display-name>
+    <servlet-name>sharetweetcontroller</servlet-name>
+    <servlet-class>controllers.sharetweetcontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sharetweetcontroller</servlet-name>
+    <url-pattern>/sharetweetcontroller</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>alltweetscontroller</display-name>
+    <servlet-name>alltweetscontroller</servlet-name>
+    <servlet-class>controllers.alltweetscontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>alltweetscontroller</servlet-name>
+    <url-pattern>/alltweetscontroller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>closesession</display-name>
+    <servlet-name>closesession</servlet-name>
+    <servlet-class>controllers.closesession</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>closesession</servlet-name>
+    <url-pattern>/closesession</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>logoutcontroller</display-name>
+    <servlet-name>logoutcontroller</servlet-name>
+    <servlet-class>controllers.logoutcontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logoutcontroller</servlet-name>
+    <url-pattern>/logoutcontroller</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>alluserstweetscontroller</display-name>
+    <servlet-name>alluserstweetscontroller</servlet-name>
+    <servlet-class>controllers.alluserstweetscontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>alluserstweetscontroller</servlet-name>
+    <url-pattern>/alluserstweetscontroller</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <description></description>
+    <display-name>deletetweetcontroller</display-name>
+    <servlet-name>deletetweetcontroller</servlet-name>
+    <servlet-class>controllers.deletetweetcontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deletetweetcontroller</servlet-name>
+    <url-pattern>/deletetweetcontroller</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>updatetweetcontroller</display-name>
+    <servlet-name>updatetweetcontroller</servlet-name>
+    <servlet-class>controllers.updatetweetcontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updatetweetcontroller</servlet-name>
+    <url-pattern>/updatetweetcontroller</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>followController</display-name>
+    <servlet-name>followController</servlet-name>
+    <servlet-class>controllers.followController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>followController</servlet-name>
+    <url-pattern>/followController</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>deleteUserController</display-name>
+    <servlet-name>deleteUserController</servlet-name>
+    <servlet-class>controllers.deleteUserController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteUserController</servlet-name>
+    <url-pattern>/deleteUserController</url-pattern>
+  </servlet-mapping>
+  
+        <servlet>
+    <description></description>
+    <display-name>userWallController</display-name>
+    <servlet-name>userWallController</servlet-name>
+    <servlet-class>controllers.userWallController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userWallController</servlet-name>
+    <url-pattern>/userWallController</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+    <description></description>
+    <display-name>unfollowController</display-name>
+    <servlet-name>unfollowController</servlet-name>
+    <servlet-class>controllers.unfollowController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>unfollowController</servlet-name>
+    <url-pattern>/unfollowController</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>votecontroller</display-name>
+    <servlet-name>votecontroller</servlet-name>
+    <servlet-class>controllers.votecontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>votecontroller</servlet-name>
+    <url-pattern>/votecontroller</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+    <description></description>
+    <display-name>retweetController</display-name>
+    <servlet-name>retweetController</servlet-name>
+    <servlet-class>controllers.retweetController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>retweetController</servlet-name>
+    <url-pattern>/retweetController</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

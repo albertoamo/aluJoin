@@ -1,0 +1,194 @@
+/* 
+@Content: Archivo css que contiene el diseño de la barra superior
+@Authors: Xavi, Lluis & Alberto;
+@Date: 11-02-2015
+*/
+
+/*****************************/
+/*  Definicion de selectores */
+/*****************************/
+
+body {
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background: #97bcdb;
+  background-image: -webkit-linear-gradient(180deg,transparent, white);  
+  background-image:    -moz-linear-gradient(180deg,transparent, white);  
+  background-image:      -o-linear-gradient(180deg,transparent, white);  
+  background-image:         linear-gradient(180deg,transparent, white);  
+  background-attachment: fixed;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   width: auto;
+}
+
+/*Esto define la barra superior*/
+header {
+
+   position: fixed;
+   left: 0;
+   top: 0;
+   height: 54px;
+   width: 100%;
+   background: #13171B;
+   box-shadow:0px 1px 5px black;
+   z-index: 990;
+
+   /* Border*/
+   /*border-bottom: 2px solid #ACACAC;*/
+}
+
+.footer{
+
+  clear: both;
+  height: 40px;
+  width: 100%;
+  bottom:0;
+  background-color: black;
+  text-align:center;
+}
+
+/*****************************/
+/* Definicion de clases y ids*/
+/*****************************/
+
+/*Logo asociado al header */
+header .logo {
+
+   float: left;
+   position: relative;
+   margin-left: 15%;
+   margin-right: 20px;
+   margin-top: 15px;
+   z-index: 1000;  
+}
+
+/* Definiendo el hyperlink al cual nos levara el logo*/
+header .logo a {
+
+   display: block;
+   width: 104px;
+   height: 18px;   
+}
+
+/* Opciones alineadas a la derecha*/
+header .nav-right {
+	
+   float: right;
+   margin-right: 15%;
+   font: 11px 'montserrat-regular', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+}
+
+header .nav-left {
+   
+   float: left;
+   font: 11px 'montserrat-regular', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+}
+
+/* Ajustando los margenes y espacios de las opciones de barra*/
+header .nav-left, .nav-left ul, .nav-left li,.nav-left ,
+.nav-right, .nav-right ul, .nav-right li,.nav-right a {
+   
+   margin: 0;
+   padding: 0;
+   border: none;
+   outline: none;
+}
+
+#wrap{
+
+  width: 1365px;
+  margin: 0;
+}
+
+/* Definicion de lista de opciones de la barra superior */
+ul#nav {
+
+   min-height: 54px;
+   width: auto;
+   text-align: left;
+}
+ul#nav li {
+
+   position: relative;
+   list-style: none;
+   height: 54px;
+   display: inline-block;
+
+}
+
+ul#nav li a {
+
+   display: inline-block;
+   padding: 8px 8px;
+   line-height: 38px;
+   text-decoration: none;
+   text-align: left;
+   color: #58687A;
+
+   -webkit-transition: color .2s ease-in-out;
+   -moz-transition: color .2s ease-in-out;
+   -o-transition: color .2s ease-in-out;
+   -ms-transition: color .2s ease-in-out;
+   transition: color .2s ease-in-out;
+}
+
+/* Funciones hover, active...*/
+ul#nav li a:hover { color: #fff; }
+ul#nav li a:active { background-color: transparent !important; }
+ul#nav li.current a { color: #fff; }
+
+/* Responsive Web Style */
+
+/* Smartphones 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+      font: 5px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+    }
+
+    header .nav-left, header .nav-right{
+      font: 4px 'montserrat-regular', sans-serif;
+    }
+}
+
+/* Smartphones
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    body {
+      font: 7px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+    }
+
+    header .nav-left, header .nav-right{
+      font: 5px 'montserrat-regular', sans-serif;
+    }
+}
+
+/* Tablets 
+@media screen and (min-width: 768px) and (max-width: 980px) {
+    body {
+      font: 9px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+    }
+
+    header .nav-left, header .nav-right{
+      font: 7px 'montserrat-regular', sans-serif;
+    }
+}
+
+/* Computers 
+@media screen and (min-width: 980px) and (max-width: 1280px) {
+    body {
+      font: 11px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+    }
+
+    header .nav-left, header .nav-right{
+      font: 9px 'montserrat-regular', sans-serif;
+    }
+}
+
+*/
